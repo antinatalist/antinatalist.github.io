@@ -8,14 +8,23 @@ html, body {
 .wrapper{
   padding: 0 15% 0;
 }
+
 a:link {
   text-decoration: none;
 }
-
+a:hover{
+  text-decoration: underline;
+}
 .main{
   margin-top:3%;
 }
 
 footer{
   padding: 5%;
+}
+
+/* css for projects.html */
+.date{
+  color:rgb(117,117,117);
+  margin-top:-12px;
 }
