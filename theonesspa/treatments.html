@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLYQ6XKNJX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RLYQ6XKNJX');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>The One's Spa | Treatments</title>
+    <link rel="shortcut icon" href="images/spaicon.ico" />
+    
+    <!-- fab(font awesome brand) -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        localStorage.clear();
+      });
+      window.addEventListener('load', (event) => {
+        //clear storage before loading 
+        localStorage.clear();
+      });
+      function getButtonClicked(buttonId, imageSource){
+        //var input = document.getElementById(buttonId); 
+        localStorage.setItem(buttonId, imageSource);
+        //alert(`Input id: ${input.id}. Button Id: ${buttonId}`);
+      }
+    </script>
+  </head>
+  <body class="disableRightClick">
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Spaicon.png">
+          <h6>THE ONE'S SPA</h6>
+          <h5>Health Spa</h5>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togglerButton">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        
+        <div class="collapse navbar-collapse" id="togglerButton">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourmission.html">OUR MISSION</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="treatments.html">TREATMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </nav>
+
+    <!-- img -->
+    <img src="images/treatments-img.webp" class="img-fluid mx-auto d-block mt-5">
+
+    <!-- Jumbotron with all services -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center bluecolored-text">
+        <h1 class="display-4">OUR<br>TREATMENTS</h1>
+        <hr class"my-4">
+      </div> 
+    </div>
+
+    <!-- services(cards) -->
+    <!--DEEP TISSUE MASSAGE-->
+    <div class="container mx-auto card-margin">
+      <div class="row my-4 text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/deep-tissue-massage1.webp" onclick="getButtonClicked('read-more-1-1', 'images/deep-tissue-massage1.webp')" alt="Deep Tissue Massage1"></a>
+            <div class="card-body">
+              <h5 class="card-title">DEEP TISSUE<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-1-1" onclick="getButtonClicked('read-more-1-1', 'images/deep-tissue-massage1.webp')">Read More</a></p></u>
+              <p class="card-text lead">30 min<Br>$40</p>
+              <a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/deep-tissue-massage2.webp" onclick="getButtonClicked('read-more-1-2', 'images/deep-tissue-massage2.webp')" alt="Deep Tissue Massage2"></a>
+            <div class="card-body">
+              <h5 class="card-title">DEEP TISSUE<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-1-2" onclick="getButtonClicked('read-more-1-2', 'images/deep-tissue-massage2.webp')">Read More</a></p></u>
+              <p class="card-text lead">45 min<Br>$50</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/deep-tissue-massage3.webp" onclick="getButtonClicked('read-more-1-3', 'images/deep-tissue-massage3.webp')" alt="Deep Tissue Massage3"></a>
+            <div class="card-body">
+              <h5 class="card-title">DEEP TISSUE<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-1-3" onclick="getButtonClicked('read-more-1-3', 'images/deep-tissue-massage3.webp')">Read More</a></p></u>
+              <p class="card-text lead">1 hr<Br>$70</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--HOT STONES MASSAGE-->
+      <div class="row my-4 text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/hotstone-massage1.webp" onclick="getButtonClicked('read-more-2-1', 'images/hotstone-massage1.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">HOT STONES<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-2-1" onclick="getButtonClicked('read-more-2-1', 'images/hotstone-massage1.webp')">Read More</a></p></u>
+              <p class="card-text lead">30 min<Br>$50</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/hotstone-massage2.webp" onclick="getButtonClicked('read-more-2-2', 'images/hotstone-massage2.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">HOT STONES<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-2-2" onclick="getButtonClicked('read-more-2-2', 'images/hotstone-massage2.webp')">Read More</a></p></u>
+              <p class="card-text lead">45 min<Br>$70</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/hotstone-massage3.webp" onclick="getButtonClicked('read-more-2-3', 'images/hotstone-massage3.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">HOT STONES<br>MASSAGE</h5>
+              <u><p><a href="read-more.html" id="read-more-2-3" onclick="getButtonClicked('read-more-2-3', 'images/hotstone-massage3.webp')">Read More</a></p></u>
+              <p class="card-text lead">1 hr<Br>$90</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--RMT MASSAGE-->
+      <div class="row my-4 text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/rmt-massage1.webp" onclick="getButtonClicked('read-more-3-1', 'images/rmt-massage1.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">RMT MASSAGE</h5>
+              <p class="card-text">This massage service is<br>provided by our professional<br>Registered Massag...</p>
+              <u><p><a href="read-more.html" id="read-more-3-1" onclick="getButtonClicked('read-more-3-1', 'images/rmt-massage1.webp')">Read More</a></p></u>
+              <p class="lead">30 min<br>$70</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/carousel-2.webp" onclick="getButtonClicked('read-more-3-2', 'images/carousel-2.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">RMT MASSAGE</h5>
+              <p class="card-text">This massage service is<Br>provided by our professional<br>Registered Massag...</p>
+              <u><p><a href="read-more.html" id="read-more-3-2" onclick="getButtonClicked('read-more-3-2', 'images/carousel-2.webp')">Read More</a></p></u>
+              <p class="lead">1 hr<br>$95</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/deep-tissue-massage1.webp" onclick="getButtonClicked('read-more-3-3', 'images/deep-tissue-massage1.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">RMT MASSAGE</h5>
+              <p class="card-text">This massage service is<br>provided by our professional<br>Registered Massag...</p>
+              <u><p><a href="read-more.html" id="read-more-3-3" onclick="getButtonClicked('read-more-3-3', 'images/deep-tissue-massage1.webp')">Read More</a></p></u>
+              <p class="lead">45 min<br>$80</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--AROMATHERAPY TREATMENT-->
+      <div class="row my-4 text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/aromatherapy1.jpg" onclick="getButtonClicked('read-more-4-1', 'images/aromatherapy1.jpg')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">Aromatherapy Treatment</h5>
+              <p class="card-text">Massage using high quality natural plant extracts to promote heal...</p>
+              <u><p><a href="read-more.html" id="read-more-4-1" onclick="getButtonClicked('read-more-4-1', 'images/aromatherapy1.jpg')">Read More</a></p></u>
+              <p class="lead">45 min<br>$80</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/aromatherapy2.jpg" onclick="getButtonClicked('read-more-4-2', 'images/aromatherapy2.jpg')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">Aromatherapy Treatment</h5>
+              <p class="card-text">Massage using high quality natural plant extracts to promote heal...</p>
+              <u><p><a href="read-more.html" id="read-more-4-2" onclick="getButtonClicked('read-more-4-2', 'images/aromatherapy2.jpg')">Read More</a></p></u>
+              <p class="lead">60 min<br>$110</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="read-more.html"><img class="card-img-top" src="images/aromatherapy3.webp" onclick="getButtonClicked('read-more-4-3', 'images/aromatherapy3.webp')" alt="image placeholder"></a>
+            <div class="card-body">
+              <h5 class="card-title">Aromatherapy Treatment</h5>
+              <p class="card-text">Massage using high quality natural plant extracts to promote heal...</p>
+              <u><p><a href="read-more.html" id="read-more-4-3" onclick="getButtonClicked('read-more-4-3', 'images/aromatherapy3.webp')">Read More</a></p></u>
+              <p class="lead">90 min<br>$160</p>
+              <p><a href="tel:+9058378008" class="btn btn-primary btn-lg treatment-book-now" role="button">Book Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--<button type="button" class="btn btn-primary" onclick="history.back()">Go Back</button>-->
+
+    <!-- footer --> 
+    <footer>
+      <div class="container mt-4"> 
+        <div class="row text-center">
+          <div class="col-md-6">
+            <p>© 2018 by The One's Spa. Proudly created with Wiew Media</p>
+          </div>
+          <div class="col-md-6 social">
+            <a href="https://facebook.com/theonesspa" target="_blank"><i class="fab fa-facebook text-right"></i></a>
+            <a href="https://twitter.com/theonesspa" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/theonesspa" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
